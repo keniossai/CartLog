@@ -26,11 +26,9 @@ a{
     color: black;
     border-radius: 50px;
     padding: 0 10px 0 10px;
-    // background-color: rgb(2, 89, 129);
     font-weight: 300;
-    // box-shadow: none;
-    // display: flex;
-
+    cursor: pointer;
+    
     &:hover{
         color: red !important;
     }

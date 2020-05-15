@@ -8,7 +8,7 @@ import { auth } from '../../firebase/firebase.utils'
 import './header-styles.scss'
 
 
-const Header = ({currentUser}) => (
+const Header = ({ currentUser }) => (
     <nav className="mb-1 navbar navbar-expand-lg navbar-dark">
   <Link className="logo-container" to='/'>
       <Logo className='logo' />
@@ -33,9 +33,9 @@ const Header = ({currentUser}) => (
         <li>   
           {
             currentUser ? (
-              <Link className='login' onClick={() => auth.signOut()}>
+              <div className='login' onClick={() => auth.signOut()}>
                 SIGN OUT
-              </Link>
+              </div>
             ) : (
               <Link className="login" to="signin">SIGN IN</Link>
             )
