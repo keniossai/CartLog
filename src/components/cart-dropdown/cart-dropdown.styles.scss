@@ -17,6 +17,27 @@
       flex-direction: column;
       overflow: scroll;
     }
+
+    .empty-message{
+      font-size: 18px;
+      margin: 50px auto;
+      animation-duration: 2s;
+      animation-name: bounceIn;
+
+      @keyframes bounceIn{
+        0% {
+          transform: scale(0.1);
+          opacity: 0;
+        }
+        60% {
+          transform: scale(1.2);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    }
   
     button {
       margin-top: auto;
