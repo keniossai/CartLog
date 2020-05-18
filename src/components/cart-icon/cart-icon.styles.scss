@@ -12,6 +12,12 @@
       width: 24px;
       height: 24px;
     }
+
+    @media screen and (max-width: 800px){
+      width: 30px;
+      height: 30px;
+      top: 5px;
+    }
   
     .item-count {
       position: absolute;
@@ -19,5 +25,9 @@
       font-weight: bold;
       bottom: 15px;
       color: red;
+
+      @media screen and (max-width: 800px){
+        top: 5px;
+      }
     }
   }

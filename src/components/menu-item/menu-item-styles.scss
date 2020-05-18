@@ -9,7 +9,9 @@
     margin: 0 7.5px 15px;
     overflow: hidden;
     
-    
+    @media screen and (max-width: 800px) {
+      height: 200px;
+    }
 
 
     &:hover{
@@ -28,6 +30,10 @@
 
     &.large{
         height: 380px;
+
+        @media screen and (max-width: 800px) {
+          height: 200px;
+        }
     }
   
     &:first-child {
@@ -58,6 +64,10 @@
       border-radius: 5px;
       position: absolute;
       margin-left: 6%;
+
+      @media screen and (max-width: 800px) {
+        border: none;
+      }
   
       .title {
         font-weight: bold;
@@ -89,6 +99,11 @@
     margin-right: 50%;
     font-weight: bold;
 
+    @media screen and (max-width: 800px) {
+      width: 7em;
+      height: 35px;
+    }
+
 
     &:hover{
       cursor: pointer;
@@ -99,4 +114,5 @@
       box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
       transition: all 0.4s ease 0s;
     }
+
 }

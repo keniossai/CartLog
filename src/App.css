@@ -3,8 +3,21 @@ body{
     padding: 20px 60px;
 }
 
+@media screen and (max-width: 800px){
+    body{
+        padding: 10px;
+    }
+}
+
+
 .footer{
     text-align: center;
     font-size: 19px;
     color: red;
+}
+
+@media screen and (max-width: 800px){
+    .footer{
+        font-size: 13px;
+    }
 }

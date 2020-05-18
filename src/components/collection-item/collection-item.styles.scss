@@ -20,6 +20,13 @@
       position: absolute;
       top: 255px;
       display: none;
+
+      @media screen and (max-width: 800px) {
+        display: block;
+        opacity: 0.9;
+        padding: 0 10px;
+        font-size: 10px;
+      }
     }
 
     &:hover{
@@ -43,11 +50,36 @@
       .name {
         width: 90%;
         margin-bottom: 15px;
+
+        @media screen and (max-width: 800px) {
+          font-size: 14px;
+          width: 50%;
+          font-weight: bold;
+        }
       }
   
       .price {
         width: 10%;
         color: green;
+
+        @media screen and (max-width: 800px) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      width: 45vw;
+      box-sizing: border-box;
+
+      &:hover{
+        .image{
+          opacity: unset;
+        }
+  
+        .custom-button{
+          opacity: unset;
+        }
       }
     }
   }

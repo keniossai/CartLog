@@ -16,6 +16,12 @@
     cursor: pointer;
     display: flex;
     justify-content: center;
+
+  
+    @media screen and (max-width: 800px) {
+      font-size: 10px;
+      letter-spacing: unset;
+    }
   
     &:hover {
       background-color: #0F9D58;
@@ -27,6 +33,10 @@
     &.google-sign-in{
         background-color: #4285f4;
         color: white;
+
+        @media screen and (max-width: 800px){
+          margin-left: 10px;
+        }
 
         &:hover{
             background-color: #DB4437;
