@@ -51,6 +51,9 @@ class App extends React.Component {
             <Route exact path='/checkout' component={CheckoutPage} />
             <Route path='/signin' render={() => this.props.currentUser ? (<Redirect to='/' />) : <SignInAndSignUpPage />} />
           </Switch>
+          <div className="footer">
+            <p>&copy;2020 v.6.0.3</p>
+          </div>
         </div>
       )
     }

@@ -2,3 +2,9 @@ body{
     font-family: 'Advent Pro', sans-serif;
     padding: 20px 60px;
 }
+
+.footer{
+    text-align: center;
+    font-size: 19px;
+    color: red;
+}
